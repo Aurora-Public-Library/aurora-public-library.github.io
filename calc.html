@@ -18,16 +18,16 @@ onload = function() {
 	<caption>Value of Your Library Use</caption>
 	<tbody>
 	<tr>
-		<th>Input Your<br />Use</th>
+		<th>Input Your<br />Monthly Use</th>
 		<th>Library Materials &amp; Services</th>
-		<th><a href="javascript:popUp('valuecalc_costs.html','window',450,575)">Value of<br />Your Use</a></th>
+		
 	</tr>
 	<tr>
 		<td colspan="3"><hr /></td>
 	</tr>
 	<tr>
 		<td><input type="text" name="books" id="books" size="5" onchange="doCalculator()" tabindex="1" /></td>
-		<td><label for="books">Adult Books Borrowed</label></td>
+		<td><label for="books">Books</label></td>
 		<td><label for="booksResult">$<input type="text" id="booksResult" size="5" value="0.00" /></label></td>
 	</tr>
 	<tr>
@@ -147,7 +147,7 @@ onload = function() {
 // calculates the value for each table row - each library material 
 // has two lines of code below
 function doCalculator(){
-	var booksValue = document.calculatorform.books.value * 17.00;
+	var booksValue = document.calculatorform.books.value * 26.91;
 	document.getElementById("booksResult").value = booksValue.toFixed(2);
 	var yabooksValue = document.calculatorform.yabooks.value * 12.00;
 	document.getElementById("yabooksResult").value = yabooksValue.toFixed(2);
