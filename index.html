@@ -1,7 +1,380 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<form action="../../ " method="post" name="calculator" id="calculator">
+                      <table width="100%" cellspacing="0" class="narrow" id="tbstriped" summary="A javascript-driven calculator to determine estimated retail value for a variety of library services">
+              <caption>
+              <h3 style='margin-bottom:25px;margin-top:25px;'>Value of Library Services</h3>
+              </caption>
+              <tbody>
+                <tr>
+                  <th style='width:25%;min-width:25px;'>Number of uses per month</th>
+                  <th  style='width:50%;min-width:120px;'></th>
+                  <th  style='width:25%;min-width:25px;'>Value of Service Per Month</th>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="AdultBook" id="AdultBook" size="5" onchange="doCalculator()" tabindex="1" />
+                  </p></td>
+                  <td><p>
+                    <label for="AdultBook">Adult Books</label>
+                  </p></td>
+                  <td><label for="AdultBookResult">$
+                      <input type="text" id="AdultBookResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="YABook" id="YABook" size="5" onchange="doCalculator()" tabindex="2" />
+                  </p></td>
+                  <td><p>
+                    <label for="YABook" >Young Adult Books</label>
+                  </p></td>
+                  <td><label for="YABookResult">$
+                      <input type="text" id="YABookResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="ChildrenBook" id="ChildrenBook" size="5" onchange="doCalculator()" tabindex="3" />
+                  </p></td>
+                  <td><p>
+                    <label for="ChildrenBook" >Children's Books</label>
+                  </p></td>
+                  <td><label for="ChildrenBookResult">$
+                      <input type="text" id="ChildrenBookResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="AudioBook" id="AudioBook" size="5" onchange="doCalculator()" tabindex="4" />
+                  </p></td>
+                  <td><p>
+                    <label for="AudioBook" >Audio Book</label>
+                  </p></td>
+                  <td><label for="AudioBookResult">$
+                      <input type="text" id="AudioBookResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+                <tr>
+                  <td><p>
+                    <input type="text" name="ebooks" id="ebooks" size="5" onchange="doCalculator()" tabindex="5" />
+                  </p></td>
+                  <td><p>
+                    <label for="ebooks" >eBook Downloads</label>
+                  </p></td>
+                  <td><label for="ebookResult">$
+                      <input type="text" id="ebookResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>				
+
+				
+                <tr>
+                  <td><p>
+                    <input type="text" name="videogames" id="videogames" size="5" onchange="doCalculator()" tabindex="6" />
+                  </p></td>
+                  <td><p>
+                    <label for="videogames" >Video Games </label>
+                  </p></td>
+                  <td><label for="videogamesResult">$
+                      <input type="text" id="videogamesResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+                <tr>
+                  <td><p>
+                    <input type="text" name="movies" id="movies" size="5" onchange="doCalculator()" tabindex="7" />
+                  </p></td>
+                  <td><p>
+                    <label for="movies" >Movies</label>
+                  </p></td>
+                  <td><label for="movieResult">$
+                      <input type="text" id="movieResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+                <tr>
+                  <td><p>
+                    <input type="text" name="musiccd" id="musiccd" size="5" onchange="doCalculator()" tabindex="8" />
+                  </p></td>
+                  <td><p>
+                    <label for="musiccd" >Music</label>
+                  </p></td>
+                  <td><label for="musiccdResult">$
+                      <input type="text" id="musiccdResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="illo" id="illo" size="5" onchange="doCalculator()" tabindex="9" />
+                  </p></td>
+                  <td><p>
+                    <label for="illo" >Interlibrary Loans</label>
+                  </p></td>
+                  <td><label for="illoResult">$
+                      <input type="text" id="illoResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="cd" id="cd" size="5" onchange="doCalculator()" tabindex="10" />
+                  </p></td>
+                  <td><p>
+                    <label for="cd" >CD's</label>
+                  </p></td>
+                  <td><label for="cdResult">$
+                      <input type="text" id="cdResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="magazines" id="magazines" size="5" onchange="doCalculator()" tabindex="11" />
+                  </p></td>
+                  <td><p>
+                    <label for="magazines" >Magazines</label>
+                  </p></td>
+                  <td><label for="magazinesResult">$
+                      <input type="text" id="magazinesResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="newspaper" id="newspaper" size="5" onchange="doCalculator()" tabindex="12" />
+                  </p></td>
+                  <td><p>
+                    <label for="newspaper" >Newspaper</label>
+                  </p></td>
+                  <td><label for="newspaperResult">$
+                      <input type="text" id="newspaperResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td><p>
+                    <input type="text" name="adultprogram" id="adultprogram" size="5" onchange="doCalculator()" tabindex="13" />
+                  </p></td>
+                  <td ><p>
+                        <label for="adultprogram">Adult Programs Attended </label> </p></td>
+                  <td><label for="adultprogramResult">$
+                      <input type="text" id="adultprogramResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+				
+                <tr>
+                  <td><p>
+                    <input type="text" name="yaprogram" id="yaprogram" size="5" onchange="doCalculator()" tabindex="14" />
+                  </p></td>
+                  <td><p>
+                    <label for="yaprogram" >Young Adult Programs Attended</label>
+                  </p></td>
+                  <td><label for="yaprogramResult">$
+                      <input type="text" id="yaprogramResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+                <tr>
+                  <td><p>
+                    <input type="text" name="childprogram" id="childprogram" size="5" onchange="doCalculator()" tabindex="15" />
+                  </p></td>
+                  <td><p>
+                    <label for="childprogram" >Children's Programs Attended</label>
+                  </p></td>
+                  <td><label for="childprogramResult">$
+                      <input type="text" id="childprogramResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+                <tr>
+                  <td><p>
+                    <input type="text" name="elearn" id="elearn" size="5" onchange="doCalculator()" tabindex="16" />
+                  </p></td>
+                  <td><p>
+                    <label for="elearn" >eLearning Courses Taken</label>
+                  </p></td>
+                  <td><label for="elearnResult">$
+                      <input type="text" id="elearnResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+				
+                <tr>
+                  <td><p>
+                    <input type="text" name="comp" id="comp" size="5" onchange="doCalculator()" tabindex="17" />
+                  </p></td>
+                  <td><p>
+                    <label for="comp" >Computer Use/Hr</label>
+                  </p></td>
+                  <td><label for="compResult">$
+                      <input type="text" id="compResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+                <tr>
+                  <td><p>
+                    <input type="text" name="wifi" id="wifi" size="5" onchange="doCalculator()" tabindex="18" />
+                  </p></td>
+                  <td><p>
+                    <label for="wifi" >Wifi Use Per Hour</label>
+                  </p></td>
+                  <td><label for="wifiResult">$
+                      <input type="text" id="wifiResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+				
+                <tr>
+                  <td><p>
+                    <input type="text" name="database" id="database" size="5" onchange="doCalculator()" tabindex="19" />
+                  </p></td>
+                  <td><p>
+                    <label for="database" >Database Searches</label>
+                  </p></td>
+                  <td><label for="databaseResult">$
+                      <input type="text" id="databaseResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+				
+				<tr>
+                  <td><p>
+                    <input type="text" name="studyrm" id="studyrm" size="5" onchange="doCalculator()" tabindex="20" />
+                  </p></td>
+                  <td><p>
+                    <label for="studyrm" >Study Room Use Per Hour</label>
+                  </p></td>
+                  <td><label for="studyrmResult">$
+                      <input type="text" id="studyrmResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+
+				<tr>
+                  <td><p>
+                    <input type="text" name="socialmedia"id="socialmedia" size="5" onchange="doCalculator()" tabindex="21" />
+                  </p></td>
+                  <td><p>
+                    <label for="socialmedia" >Computer & Social Media Requests
+                  </p></td>
+                  <td><label for="socialmediaResult">$
+                      <input type="text" id="socialmediaResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+				<tr>
+                  <td><p>
+                    <input type="text" name="info"id="info" size="5" onchange="doCalculator()" tabindex="22" />
+                  </p></td>
+                  <td><p>
+                    <label for="info" >Computer & Social Media Requests
+                  </p></td>
+                  <td><label for="infoResult">$
+                      <input type="text" id="infoResult" size="5" value="0.00" />
+                    </label></td>
+                </tr>
+                <tr>
+                  <td colspan="2" align="center"><input type="button" value="Click to Calculate" onclick="doCalculator()" tabindex="23" />
+                    <input type="reset" value="Clear Form" /></td>
+                  <td><label for="totalResult">
+                    $
+                    <input type="text" name="totalResult" id="totalResult" size="7" value="0.00" />
+                    <label>Per Year</label>
+                    </label></td>
+                </tr>
+              </tbody>
+            </table>
+            </p>
+          </form>
+          <script type="text/javascript">
+
+function doCalculator(){
+   	var AudultBookValue = document.calculator.AdultBook.value * 29.33;
+	document.getElementById("AdultBookResult").value = AdultBookValue.toFixed(2);
+
+	var YABookValue = document.calculator.YABook.value * 23.82;
+	document.getElementById("YABookResult").value = YABookValue.toFixed(2);
+
+	var childValue = document.calculator.ChildrenBook.value * 18.31;
+	document.getElementById("ChildrenBookResult").value = childValue.toFixed(2);
+
+	var AudioBookValue = document.calculator.AudioBook.value * 48.03;
+	document.getElementById("AudioBookResult").value = AudioBookValue.toFixed(2);
+
+	var ebookValue = document.calculator.ebooks.value * 24.00;
+	document.getElementById("ebooksResult").value = ebookValue.toFixed(2);
+
+	var videogamesValue = document.calculator.videogames.value * 56.06;
+	document.getElementById("videogamesResult").value = videogamesValue.toFixed(2);
+
+	var moviesValue = document.calculator.movies.value * 30.00;
+	document.getElementById("moviesResult").value = moviesValue.toFixed(2);
+
+	var musiccdValue = document.calculator.musiccd.value * 17.76;
+	document.getElementById("musiccdResult").value = musiccdValue.toFixed(2);
+
+	var illoValue = document.calculator.illo.value * 25.00;
+	document.getElementById("illoResult").value = illoValue.toFixed(2);
+
+	var cdValue = document.calculator.cd.value * 15.00;
+	document.getElementById("cdResult").value = cdValue.toFixed(2);
+	
+	var magazinesValue = document.calculator.magazines.value * 5.00;
+	document.getElementById("magazinesResult").value = magazinesValue.toFixed(2);
+
+	var newspaperValue = document.calculator.newspaper.value * 1.50;
+	document.getElementById("newspaperResult").value = newspaperValue.toFixed(2);
+
+	var adultprogramValue = document.calculator.adultprogram.value * 18.00;
+	document.getElementById("adultprogramResult").value = adultprogramValue.toFixed(2);
+
+	var yaprogramValue = document.calculator.yaprogram.value * 15.00;
+	document.getElementById("yaprogramResult").value = yaprogramValue.toFixed(2);
+
+	var childprogramValue = document.calculator.childprogram.value * 12.00;
+	document.getElementById("childprogramResult").value = childprogramValue.toFixed(2);
+
+	var elearnValue = document.calculator.elearn.value * 75.00;
+	document.getElementById("elearnResult").value = elearnValue.toFixed(2);
+
+	var compValue = document.calculator.comp.value * 3.00;
+	document.getElementById("compResult").value = compValue.toFixed(2);
+
+	var wifiValue = document.calculator.wifi.value * 2.50;
+	document.getElementById("wifiResult").value = wifiValue.toFixed(2);
+
+	var databaseValue = document.calculator.database.value * 20.00;
+	document.getElementById("databaseResult").value = databaseValue.toFixed(2);
+	
+	var studyrmValue = document.calculator.studyrm.value * 75.00;
+	document.getElementById("studyrmResult").value = studyrmValue.toFixed(2);
+	
+		var socialmediaValue = document.calculator.socialmedia.value * 15.00;
+	document.getElementById("socialmediaResult").value = socialmediaValue.toFixed(2);
+	
+		var infoValue = document.calculator.info.value * 15.00;
+	document.getElementById("infoResult").value = infoValue.toFixed(2);
+	
+	
+	
+	
+	var totalValue =  (document.calculator.AdultBookResult.value * 12)
+	                + (document.calculator.YABookResult.value * 12)
+	                + (document.calculator.ChildrenBookResult.value * 12)
+	                + (document.calculator.AudioBookResult.value * 12)
+	                + (document.calculator.ebooksResult.value * 12)
+	                + (document.calculator.videogamesResult.value * 12)
+	                + (document.calculator.MoviesResult.value * 12)
+	                + (document.calculator.musiccdResult.value * 12)
+					+ (document.calculator.illoResult.value * 12)
+	                + (document.calculator.cdResult.value * 12)
+	                + (document.calculator.magazinesResult.value * 12)
+	                + (document.calculator.newspaperResult.value * 12)					
+	                + (document.calculator.adultprogramResult.value * 12)
+					+ (document.calculator.yaprogramResult.value * 12)
+					+ (document.calculator.childprogramResult.value * 12)
+					+ (document.calculator.elearnResult.value * 12)
+					+ (document.calculator.compResult.value * 12)
+					+ (document.calculator.wifiResult.value * 12)
+					+ (document.calculator.databaseResult.value * 12)
+					+ (document.calculator.studyrmResult.value * 12)
+					+ (document.calculator.socialmediaResult.value * 12)
+					+ (document.calculator.infoResult.value * 12);
+	document.getElementById("totalResult").value = totalValue.toFixed(2);
+}
+                      </script>
 </body>
 </html>
