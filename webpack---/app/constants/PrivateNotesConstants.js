@@ -1,0 +1,13 @@
+import { createReduxConstants } from '@bibliocommons/utils-redux';
+
+export default createReduxConstants('PRIVATE_NOTES', {
+  ADD_PRIVATE_NOTES_REQUEST: null,
+  ADD_PRIVATE_NOTES_SUCCESS: null,
+  ADD_PRIVATE_NOTES_FAILURE: null,
+  UPDATE_PRIVATE_NOTES_REQUEST: null,
+  UPDATE_PRIVATE_NOTES_SUCCESS: null,
+  UPDATE_PRIVATE_NOTES_FAILURE: null,
+  REMOVE_PRIVATE_NOTES_REQUEST: null,
+  REMOVE_PRIVATE_NOTES_SUCCESS: null,
+  REMOVE_PRIVATE_NOTES_FAILURE: null
+});
