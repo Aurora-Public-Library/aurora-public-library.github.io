@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
 
+	<link rel="stylesheet" href="styles.css">
 	
- <link rel="stylesheet" href="styles.css">	
 </head>
 <body>
 <script type="text/javascript">
@@ -11,7 +11,265 @@ onload = function() {
 	document.calculatorform.reset();
 }
 </script>
-<div class="header_main">
+<div class="bc_core_external">
+<div class="cp_header_wrapper">
+  <div class="cp_header" data-js="cp_header" testid="header" data-responsive="true">
+
+    <div class="cp_header_biblio_bar">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-xs-12">
+
+        <div class="pull-left visible-xs help_location_links_xs">
+            <a href="https://aurorapl.ca/locations/AURORA" class="biblio_bar_link header_hours_and_locations_link" data-js="header_hours_and_locations_link" data-target="header_locations_dropdown_menu" data-ga-category="header_locations_link" data-ga-label="Locations Link" testid="link_hours_and_locations">
+  <i aria-hidden="true" class=" icon-location"></i>
+  <span class="sr-only-xs">Hours &amp; Location</span>
+</a>
+
+          <a href="https://aurorapl.ca/using-the-library" class="biblio_bar_link header_help_link" data-js="header_help_link" data-target="header_help_dropdown_menu" data-ga-category="header_help_link" data-ga-label="Help Link" testid="link_help">
+  <i aria-hidden="true" class=" icon-help-circled"></i>
+  <span class="hidden-xs" aria-hidden="true">Help</span>
+  <span class="sr-only">Help, opens a new window</span>
+</a>
+
+        </div>
+
+        <div class="pull-right header_biblio_bar_right">
+          <div class="hidden-xs help_location_links">
+              <a href="https://aurorapl.ca/locations/AURORA" class="biblio_bar_link header_hours_and_locations_link" data-js="header_hours_and_locations_link" data-target="header_locations_dropdown_menu" data-ga-category="header_locations_link" data-ga-label="Locations Link" testid="link_hours_and_locations">
+  <i aria-hidden="true" class=" icon-location"></i>
+  <span class="sr-only-xs">Hours &amp; Location</span>
+</a>
+
+
+              <div class="header_help_dropdown_wrapper hidden-xs" data-ga-category="header_help_dropdown" data-ga-label="Help Dropdown" data-ga-event="show" testid="header_help_dropdown">
+  <a href="#" aria-expanded="false" aria-haspopup="true" class="biblio_bar_link dropdown-toggle hide_trigger_icon" data-toggle="dropdown" id="header_help_dropdown_trigger" role="button" testid="header_help_dropdown_trigger">
+      <i aria-hidden="true" class=" icon-help-circled"></i>
+<span aria-hidden="true">Help</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Help, collapsed" data-text-expanded="Help, expanded">Help, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a>
+  <div class="dropdown-menu" data-js="header_help_dropdown_menu" aria-labelledby="header_help_dropdown_trigger">
+    <div class="header_help_menu">
+      <div class="form-group faq-search">
+        <form action="https://aurorapl.ca" autocomplete="off" method="get">
+          <label for="faqs_search_input">Search FAQs</label>
+          <div class="input-group">
+            <input id="post_type" name="post_type" type="hidden" value="bccms_faq">
+            <input autocomplete="off" class="form-control text" id="faqs_search_input" name="s" testid="faqs_search_input" type="text">
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary btn-flat">
+                <i aria-hidden="true" class=" icon-search"></i>
+                <span class="sr-only">Search</span>
+              </button>
+            </span>
+          </div>
+</form>      </div>
+
+    </div>
+  </div>
+</div>
+
+          </div>
+          <!-- begin BCNAV -->
+<div data-js="bc_my_account_nav" class="bc_my_account_nav">
+  <!-- Template: t_biblionav_admin_nav -->
+<div class="admin_nav hidden" data-js="biblionav_admin_nav" testid="admin_nav">
+  <a href="#" aria-expanded="false" class="biblio_bar_link admin_nav_trigger dropdown-toggle hide_trigger_icon" data-js="admin_nav_trigger" data-toggle="dropdown" id="admin_nav_trigger" testid="admin_nav_trigger">
+    <svg aria-hidden="false" class="svg_icon " focusable="false" height="14" viewBox="0 0 30 32" width="14" xmlns="http://www.w3.org/2000/svg">
+  <title>Admin</title>
+<path d="M6.848 26.272q0-0.448-0.32-0.8t-0.8-0.32-0.8 0.32-0.352 0.8 0.352 0.8 0.8 0.352 0.8-0.352 0.32-0.8zM18.368 18.784l-12.192 12.192q-0.672 0.64-1.6 0.64t-1.632-0.64l-1.888-1.952q-0.672-0.64-0.672-1.6 0-0.928 0.672-1.632l12.16-12.16q0.704 1.76 2.048 3.104t3.104 2.048zM29.696 11.008q0 0.704-0.416 1.888-0.864 2.4-2.944 3.904t-4.608 1.472q-3.328 0-5.664-2.336t-2.336-5.664 2.336-5.632 5.664-2.368q1.024 0 2.144 0.32t1.92 0.832q0.288 0.192 0.288 0.48t-0.288 0.512l-5.216 3.008v4l3.456 1.92q0.064-0.064 1.408-0.864t2.4-1.44 1.28-0.64q0.256 0 0.416 0.16t0.16 0.448z"></path>
+</svg>
+<span aria-hidden="true" class="hidden-sm hidden-xs">Admin</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Admin, collapsed" data-text-expanded="Admin, expanded">Admin, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a>
+  <ul class="dropdown-menu admin_nav_menu" data-js="admin_nav_menu" aria-labelledby="admin_nav_trigger"></ul>
+</div>
+
+<script id="t_biblionav_admin_nav" type="x-handlebars-template">
+  {{#if admin_nav.length}}
+    <li aria-hidden="true" class="dropdown-header">
+      Library
+    </li>
+
+    {{#each admin_nav}}
+      <li aria-hidden="true">
+        <a href="{{link}}" testid="biblionav_admin_{{locals.testid}}">{{title}}</a>
+      </li>
+    {{/each}}
+  {{/if}}
+
+  {{#if bcadmin_nav.length}}
+    <li aria-hidden="true" class="divider"></li>
+
+    <li aria-hidden="true" class="dropdown-header">
+      BC Admin
+    </li>
+
+    {{#each bcadmin_nav}}
+      <li aria-hidden="true">
+        <a href="{{link}}" testid="biblionav_admin_{{locals.testid}}">{{title}}</a>
+      </li>
+    {{/each}}
+  {{/if}}
+</script>
+
+
+  <div class="biblio_bar_my_account">
+    <a href="javascript:void(0);" class="dropdown-toggle my_account_toggle biblio_bar_link hide_trigger_icon" data-test-id="user_state_logged_out" id="biblionav_account_trigger" data-js="biblionav_account_trigger" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span aria-hidden="true" class="my_account_label">Log In / My APL</span>
+    <span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="User Log In / My APL." data-text-expanded="User Log In / My APL.">User Log In / My APL.</span>
+
+  <span class="icon-arrow" aria-hidden="true"></span>
+</a>
+
+    <ul class="dropdown-menu biblionav_my_account" data-js="biblionav_my_account" aria-labelledby="biblionav_account_trigger">
+
+      <!-- Template - t_biblionav_my_account_user_info -->
+      
+  <li class="info" data-js="biblionav_my_account_user_info">
+      <a href="https://aurora.bibliocommons.com/user/login?destination=https%3A%2F%2Faurorapl.ca%2Fadults%2F" class="btn btn-transactional btn-block log_in_btn" data-ga-category="biblionav_my_account_login" data-js="header_login_link" testid="biblionav_login">Log In / Register</a>
+  </li>
+  <li aria-hidden="true" role="presentation" class="divider" data-js="divider_logged_out"></li>
+
+
+
+
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+
+          <li>
+            <a href="https://aurora.bibliocommons.com/dashboard/user_dashboard" class=" " data-ga-category="biblionav_my_account_dashboard" testid="biblionav_mylibrary">My Library Dashboard</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+          <li class="dropdown-header">My Borrowing</li>
+
+          <li>
+            <a href="https://aurora.bibliocommons.com/checkedout" class=" indented" data-ga-category="biblionav_my_account_checkedout" testid="biblionav_checkedout">Checked Out</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/holds" class=" indented" data-ga-category="biblionav_my_account_holds" testid="biblionav_holds">On Hold</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/recentlyreturned" class="hidden indented" data-ga-category="biblionav_my_account_recentlyreturned" data-js="borrowing_history_menu_item" testid="biblionav_borrowing_history">Borrowing History</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/fines" class=" indented" data-ga-category="biblionav_my_account_fines" testid="biblionav_fines">Fees</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/v2/interlibraryloans" class="hidden indented" data-ga-category="biblionav_my_account_nav_item">ILL Requests</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+          <li class="dropdown-header">My Collections</li>
+
+          <li>
+            <a href="https://aurora.bibliocommons.com/collection/show/my/library/for_later" class=" indented" data-ga-category="biblionav_my_account_shelves_future" testid="biblionav_shelves_future">For Later Shelf</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/collection/show/my/library/completed" class=" indented" data-ga-category="biblionav_my_account_shelves_past" testid="biblionav_shelves_past">Completed Shelf</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/collection/show/my/library/in_progress" class=" indented" data-ga-category="biblionav_my_account_shelves_present" testid="biblionav_shelves_present">In Progress Shelf</a>
+</li>          <li>
+            <a href="https://aurora.bibliocommons.com/lists/show/mine" class=" indented" data-ga-category="biblionav_my_account_lists" testid="biblionav_lists">Lists</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+
+          <li>
+            <a href="https://aurora.bibliocommons.com/user_profile/me" class=" " data-ga-category="biblionav_my_account_myprofile" testid="biblionav_myprofile">My Profile</a>
+</li>
+        <li aria-hidden="true" role="presentation" class="divider"></li>
+
+
+          <li>
+            <a href="https://aurora.bibliocommons.com/account" class=" " data-ga-category="biblionav_my_account_mysettings" testid="biblionav_mysettings">My Settings</a>
+</li>
+      <!-- Template: t_biblionav_account_selector -->
+      <li data-js="biblionav_account_selector"></li>
+      
+    </ul>
+  </div>
+
+
+</div>
+<!-- end BCNAV -->
+
+<script id="t_biblionav_divider" type="x-handlebars-template">
+  <li aria-hidden="true" role="presentation" class="divider" data-js="divider_{{divider_name}}"></li>
+</script>
+
+<script id="t_biblionav_account_trigger" type="x-handlebars-template">
+  {{#if logged_in}}
+    <div class="cp_user_avatar sm home_patron" testid="user_avatar_{{user_id}}">
+      {{#if user_avatar}}
+        <img src="{{user_avatar}}" class="img-circle" alt="">
+      {{else}}
+        <div class="img-circle initial"><span aria-hidden="true">{{user_initial}}</span></div>
+      {{/if}}
+    </div>
+    <span class="hidden-xs user_identity_name" aria-hidden= "true">{{user_name}}</span>
+    <span class="sr-only hidden-xs" data-js="sr-only-dropdown-toggle" data-text-collapsed="User {{user_name}}." data-text-expanded="User {{user_name}}.">User {{user_name}}.</span>
+    <span class="sr-only visible-xs" data-js="sr-only-dropdown-toggle" data-text-collapsed="For {{user_name}}. Double-tap to expand." data-text-expanded="Menu for {{user_name}} shows pop-up">For {{user_name}}. Double-tap to expand.</span>
+  {{else}}
+    <span aria-hidden= "true" class="my_account_label">Log In / My APL</span>
+    <span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="User Log In / My APL." data-text-expanded="User Log In / My APL.">User Log In / My APL.</span>
+  {{/if}}
+
+  <span class="icon-arrow" aria-hidden="true"></span>
+</script>
+
+<script id="t_biblionav_my_account_user_info" type="x-handlebars-template">
+  <li class="info" data-js="biblionav_my_account_user_info">
+    {{#if logged_in}}
+      <div class="pull-left">
+        <div class="my-account"><b>My Account</b></div>
+      </div>
+      <div class="pull-right notification-buttons">
+        <a href="https://aurora.bibliocommons.com/user_profile/me/notification_feed" class="btn btn-default btn-flat" data-ga-category="biblionav_my_account_notifications" testid="biblionav_notifications">
+            <i aria-hidden="true" class=" icon-bell"></i>
+            {{#if unread_notifications}}
+              <span class="badge" aria-hidden="true">{{unread_notifications}}</span>
+              <span class="sr-only">
+                {{unread_notifications}} notifications
+              </span>
+            {{else}}
+              <span class="sr-only">Notifications</span>
+            {{/if}}
+</a>        
+        <a href="https://aurora.bibliocommons.com/account/personal_information" class="btn btn-default btn-flat" data-ga-category="biblionav_my_account_mysettings" data-ga-label="Settings Icon" testid="biblionav_mysettings">
+          <i aria-hidden="true" class=" icon-cog"></i>
+          <span class="sr-only">My Settings</span>
+</a>      </div>
+      <a href="https://aurora.bibliocommons.com/user/logout" class="btn btn-transactional btn-block log_out_btn" data-ga-category="biblionav_my_account_logout" testid="biblionav_logout">Log Out</a>
+    {{else}}
+      <a href="https://aurora.bibliocommons.com/user/login" class="btn btn-transactional btn-block log_in_btn" data-ga-category="biblionav_my_account_login" data-js="header_login_link" testid="biblionav_login">Log In / Register</a>
+    {{/if}}
+  </li>
+</script>
+
+<script id="t_biblionav_account_selector" type="x-handlebars-template">
+  <ul>
+    <li aria-hidden="true" role="presentation" class="divider"></li>
+    <li aria-hidden="true" role="presentation" class="dropdown-header">
+      Switch Library Account
+    </li>
+    {{#each accounts}}
+      <li>
+        <a href="https://{{link}}"
+           class="indented"
+           data-js="switch_linked_library"
+           data-host="{{link}}"
+           data-ga-category="biblionav_my_account_switch_account"
+           testid="biblionav_multiaccount_lib_{{text}}">
+          {{text}} <i aria-hidden="true" class=" icon-right"></i>
+        </a>
+      </li>
+    {{/each}}
+  </ul>
+</script>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div><!-- /.cp_header_biblio_bar -->
+
+
+    <div class="header_main">
       <div class="client_and_search" data-test-id="header-desktop-search">
   <div class="container">
     <div class="pull-left cp_header_client_area">
@@ -284,6 +542,19 @@ onload = function() {
 </script>
 
     </div>
+  </div><!-- /.cp_header -->
+</div>
+  <div id="overlay" aria-hidden="true" role="application" data-js="overlay-container" data-test-id="overlay-container">
+  <div class="overlay-backdrop"></div>
+  <div class="overlay-inner">
+    <div class="overlay-body" data-test-id="overlay-body"></div>
+    <a href="#close-overlay" class="overlay-close js-close-trigger" data-test-id="overlay-close">
+      <i aria-hidden="true" class=" icon-cancel"></i>
+      <span class="sr-only">Close Dialog</span>
+    </a>
+  </div>
+</div>
+  </div>
 <div align="center">
 
 <form action=" " method="post" name="calculatorform" id="calculatorform">
