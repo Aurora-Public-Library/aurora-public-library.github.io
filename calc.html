@@ -11,6 +11,279 @@ onload = function() {
 	document.calculatorform.reset();
 }
 </script>
+<div class="header_main">
+      <div class="client_and_search" data-test-id="header-desktop-search">
+  <div class="container">
+    <div class="pull-left cp_header_client_area">
+  <div class="pull-left logo">
+    <a href="https://aurorapl.ca"><picture><source media="(max-width: 991px)" sizes="64px" srcset="//cor-liv-cdn-static.bibliocommons.com/images/ONT-AURORA/mobile_logo.png?1666012532651"><img alt="Aurora Public Library" src="//cor-liv-cdn-static.bibliocommons.com/images/ONT-AURORA/logo.png?1666012532651" title=""></picture></a>
+  </div>
+
+  <div class="pull-left visible-xs-block visible-sm-block xs_icon_triggers">
+    <a href="#" aria-label="Main navigation" data-ga-category="mobile_header_main_nav" data-ga-label="Mobile Main Nav" data-js="header_nav_xs_trigger" data-main-nav="true" data-target="header-main-nav" id="header_nav_xs_trigger" role="button"><i aria-hidden="true" class=" icon-menu"></i><span class="sr-only">Main navigation</span></a>
+
+  </div>
+</div>
+
+    <div class="visible-xs-block visible-sm-block xs_icon_triggers">
+      <a href="#" aria-label="Open search form" class="header_search_xs" data-icon-off="icon-cancel" data-icon-on="icon-search" data-js="header_search_xs_trigger" role="button"><i aria-hidden="true" class=" icon-search"></i><span class="sr-only">Open search form</span></a>
+    </div>
+
+    <div class="hidden-xs hidden-sm header_collapsible_search_wrapper">
+
+      <div class="header_search_wrapper header_search_wrapper_desktop header_search_catalogue" data-js="header_search_wrapper header_search_wrapper_desktop">
+        <div class="cp_header_search loaded" id="header_search" data-js="header_search">
+          <div>
+              <div class="pull-left">
+                <span class="connector" aria-hidden="true">Search the</span>
+                <div class="bootstrap-select-wrapper" data-test-id="header-other-search-options"><select aria-label="Search alternatives" class="selectpicker form-control bs-select-hidden" data-dropup-auto="false" data-js="header_search_target" data-style="btn-flat btn-default" id="searchOpt" name="searchOpt" testid="search_scope"><option value="catalogue" data-action="https://aurora.bibliocommons.com/search" data-query-field="q">Catalogue</option>
+<option value="website" data-action="https://aurorapl.ca" data-query-field="s">Website</option>
+<option value="faqs" data-action="https://aurorapl.ca" data-query-field="s">FAQs</option>
+<option value="events" data-action="https://aurora.bibliocommons.com/events/search/q=__QUERY__" data-query-field="">Events</option>
+<option value="website" data-action="http://aurorapl.ca/search/node/__QUERY__" data-query-field="">Site</option>
+<option value="articles" data-action="http://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s3798045&amp;groupid=main&amp;profid=eds&amp;mode=bool&amp;lang=en&amp;cli0=FT&amp;clv0=Y&amp;cli1=DISCIPLINE&amp;clv1=&amp;bquery=__QUERY__" data-query-field="">eArticles</option></select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-flat btn-default" data-toggle="dropdown" data-id="searchOpt" title="Catalogue"><span class="filter-option pull-left">Catalogue</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Catalogue</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Website</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">FAQs</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Events</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Site</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">eArticles</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div></div>
+
+              </div>
+
+            <form action="https://aurora.bibliocommons.com/search" class="collapsible_search_form" data-js="header_search_form desktop_search_form" id="desktop_search_form" name="desktop_search_form">
+              <div class="pull-left">
+                    <div data-js="header_target_search_options" data-target="catalogue">
+                      <div class="form-group">
+  <span class="connector" aria-hidden="true">
+    by
+  </span>
+  <!-- begin SEARCH TYPE -->
+<div class="bootstrap-select-wrapper" data-test-id="header-search-type-dropdown"><select aria-label="Search type" class="form-control selectpicker form-control bs-select-hidden" data-dropup-auto="false" data-js="search_type" data-style="btn-flat btn-default" id="search_filter_id_3h80alcsujnnc0vmd781jk24if" name="t" testid="search_filter"><option value="smart">Keyword</option>
+<option value="title">Title</option>
+<option value="author">Author</option>
+<option value="series">Series</option>
+<option value="subject">Subject</option>
+<option value="tag">Tag</option>
+<option value="userlist">List</option>
+<option value="user">User</option></select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-flat btn-default" data-toggle="dropdown" data-id="search_filter_id_3h80alcsujnnc0vmd781jk24if" title="Keyword"><span class="filter-option pull-left">Keyword</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Keyword</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Title</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Author</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Series</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Subject</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Tag</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">List</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">User</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div></div>
+
+<input data-js="search_category" id="search_category_id_1aekj7kqbk7anf8aso2p84p9vf" name="search_category" testid="search_category" type="hidden" value="keyword">
+<!-- end SEARCH TYPE-->
+</div>
+
+
+
+
+</div>                    <div class="hidden" data-js="header_target_search_options" data-target="website">
+                      <div class="form-group">
+  <span class="connector" aria-hidden="true">for</span>
+  <div class="bootstrap-select-wrapper"><select aria-label="Search within the website" class="selectpicker form-control bs-select-hidden" data-dropup-auto="false" data-js="header_search_format" data-style="btn-flat btn-default" id="post_type" name="post_type" testid="cms_post_type" disabled=""><option value="">All Content</option>
+<option value="bccms_faq">FAQs</option>
+<option value="bccms_news">News</option>
+<option value="post">Blog Posts</option></select><div class="btn-group bootstrap-select form-control disabled"><button type="button" class="btn dropdown-toggle disabled btn-flat btn-default" data-toggle="dropdown" data-id="post_type" title="All Content" tabindex="-1"><span class="filter-option pull-left">All Content</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Content</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">FAQs</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">News</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Blog Posts</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div></div>
+</div>
+
+</div>                    <div class="hidden" data-js="header_target_search_options" data-target="faqs">
+                      <input id="post_type" name="post_type" type="hidden" value="bccms_faq" disabled="">
+
+</div>              </div>
+
+              <!-- begin SEARCH INPUT -->
+
+  <div class="input-group header_search_box">
+
+    <label class="sr-only" for="search_box_id_7e3nddarpo1ub72ef3cln8ejun">Enter search query</label>
+    
+    <span class="main_search_input_wrapper" data-js="main_search_input_wrapper">
+      <input aria-activedescendant="" aria-autocomplete="both" aria-expanded="false" aria-owns="header_auto_suggest_id_4sphq183frfel0k4qrr2ggodj7" autocomplete="off" class="form-control main_search_input text" data-js="main_search_input" id="search_box_id_7e3nddarpo1ub72ef3cln8ejun" maxlength="1000" name="q" testid="main_search_input" type="search">
+      <span class="header_search_filter_lock form-control-feedback" data-js="search_filter_locked" aria-hidden="true">
+        <svg aria-hidden="true" class="svg_icon " focusable="false" height="14" style="transform: rotate(-45deg);" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.5 0l-1.5 1.5 1.5 1.5-3.5 4h-3.5l2.75 2.75-4.25 5.635v0.615h0.615l5.635-4.25 2.75 2.75v-3.5l4-3.5 1.5 1.5 1.5-1.5-7.5-7.5zM7 8.5l-1-1 3.5-3.5 1 1-3.5 3.5z"></path>
+</svg>
+      </span>
+
+      <button class="btn btn-link header_search_clear_button" data-js="header_search_clear_button" type="button">
+        <div class="sr-only">
+          Clear Text
+        </div>
+        <svg aria-hidden="true" class="svg_icon svg_close_icon" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="rotate(45 7.964 7.964)"></rect>
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="scale(-1 1) rotate(45 0 -11.263)"></rect>
+</svg>
+</button>
+        <div data-js="header_auto_suggest" class="cp_header_auto_suggest hidden">
+  <div data-js="auto_suggest_aria_messages" class="sr-only" role="alert" aria-live="polite" aria-atomic="false"></div>
+  <ul id="header_auto_suggest_id_4sphq183frfel0k4qrr2ggodj7" data-js="suggestion-menu" class="dropdown-menu" role="listbox"></ul>
+
+  <div class="hidden">
+    <svg aria-hidden="true" class="suggestion-skeleton-icon pulse" data-js="suggestion_skeleton_svg" focusable="false" height="14" preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 10" width="14" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="currentColor" width="2000" height="10"></rect>
+</svg>
+  </div>
+</div>
+
+
+    </span>
+
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary btn-flat">
+        <i aria-hidden="true" class=" icon-search"></i>
+        <span class="sr-only">Search</span>
+      </button>
+    </span>
+  </div>
+
+<!-- end SEARCH INPUT -->
+
+</form>          </div>
+
+          <div class="pull-right small adv_search">
+            <a href="https://aurora.bibliocommons.com/user/saved_searches" class="hidden" data-ga-category="header_saved_searches" data-js="save_search_overlay" testid="link_savedsearches">Saved Searches</a>
+
+            <a href="https://aurora.bibliocommons.com/search" test_id="link_advancedsearch">Advanced Search</a>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><!-- /.client_and_search -->
+
+<div class="clearfix header_search_wrapper search_wrapper_xs header_search_catalogue" data-js="header_search_wrapper header_search_wrapper_xs" data-test-id="header-mobile-search">
+  <div class="col-xs-12">
+    <div class="cp_header_search" data-js="header_search">
+      <h2 data-js="header_search_title" class="header_search_title" tabindex="-1">
+        Search
+      </h2>
+
+        <div class="form-group">
+          <div class="bootstrap-select-wrapper" data-test-id="header-other-search-options"><select aria-label="Search alternatives" class="selectpicker form-control bs-select-hidden" data-dropup-auto="false" data-js="header_search_target" data-style="btn-flat btn-default" id="searchOpt" name="searchOpt" testid="search_scope"><option value="catalogue" data-action="https://aurora.bibliocommons.com/search" data-query-field="q">Catalogue</option>
+<option value="website" data-action="https://aurorapl.ca" data-query-field="s">Website</option>
+<option value="faqs" data-action="https://aurorapl.ca" data-query-field="s">FAQs</option>
+<option value="events" data-action="https://aurora.bibliocommons.com/events/search/q=__QUERY__" data-query-field="">Events</option>
+<option value="website" data-action="http://aurorapl.ca/search/node/__QUERY__" data-query-field="">Site</option>
+<option value="articles" data-action="http://search.ebscohost.com/login.aspx?authtype=ip,cpid&amp;direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s3798045&amp;groupid=main&amp;profid=eds&amp;mode=bool&amp;lang=en&amp;cli0=FT&amp;clv0=Y&amp;cli1=DISCIPLINE&amp;clv1=&amp;bquery=__QUERY__" data-query-field="">eArticles</option></select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-flat btn-default" data-toggle="dropdown" data-id="searchOpt" title="Catalogue"><span class="filter-option pull-left">Catalogue</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Catalogue</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Website</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">FAQs</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Events</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Site</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">eArticles</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div></div>
+
+        </div>
+
+      <form accept-charset="UTF-8" action="https://aurora.bibliocommons.com/search" data-js="header_search_form mobile_search_form" id="mobile_search_form" method="get" name="mobile_search_form"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="✓"></div>
+            <div data-js="header_target_search_options" data-target="catalogue">
+              <div class="form-group">
+  <span class="connector" aria-hidden="true">
+    by
+  </span>
+  <!-- begin SEARCH TYPE -->
+<div class="bootstrap-select-wrapper" data-test-id="header-search-type-dropdown"><select aria-label="Search type" class="form-control selectpicker form-control bs-select-hidden" data-dropup-auto="false" data-js="search_type" data-style="btn-flat btn-default" id="search_filter_id_4cevsuuc90085bqplt1q6rqpn0" name="t" testid="search_filter"><option value="smart">Keyword</option>
+<option value="title">Title</option>
+<option value="author">Author</option>
+<option value="series">Series</option>
+<option value="subject">Subject</option>
+<option value="tag">Tag</option>
+<option value="userlist">List</option>
+<option value="user">User</option></select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-flat btn-default" data-toggle="dropdown" data-id="search_filter_id_4cevsuuc90085bqplt1q6rqpn0" title="Keyword"><span class="filter-option pull-left">Keyword</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Keyword</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Title</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Author</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Series</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="4"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Subject</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="5"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Tag</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="6"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">List</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="7"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">User</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div></div>
+
+<input data-js="search_category" id="search_category_id_33gm2f5q80rb9qr2qijeotf00b" name="search_category" testid="search_category" type="hidden" value="keyword">
+<!-- end SEARCH TYPE-->
+</div>
+
+
+
+
+</div>            <div class="hidden" data-js="header_target_search_options" data-target="website">
+              <div class="form-group">
+  <span class="connector" aria-hidden="true">for</span>
+  <div class="bootstrap-select-wrapper"><select aria-label="Search within the website" class="selectpicker form-control bs-select-hidden" data-dropup-auto="false" data-js="header_search_format" data-style="btn-flat btn-default" id="post_type" name="post_type" testid="cms_post_type"><option value="">All Content</option>
+<option value="bccms_faq">FAQs</option>
+<option value="bccms_news">News</option>
+<option value="post">Blog Posts</option></select><div class="btn-group bootstrap-select form-control"><button type="button" class="btn dropdown-toggle btn-flat btn-default" data-toggle="dropdown" data-id="post_type" title="All Content"><span class="filter-option pull-left">All Content</span>&nbsp;<span class="bs-caret"><span class="caret"></span></span></button><div class="dropdown-menu open"><ul class="dropdown-menu inner"><li data-original-index="0" class="selected"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">All Content</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="1"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">FAQs</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="2"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">News</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li><li data-original-index="3"><a tabindex="0" class="" style="" data-tokens="null"><span class="text">Blog Posts</span><span class="glyphicon glyphicon-ok check-mark"></span></a></li></ul></div></div></div>
+</div>
+
+</div>            <div class="hidden" data-js="header_target_search_options" data-target="faqs">
+              <input id="post_type" name="post_type" type="hidden" value="bccms_faq">
+
+</div>
+        <div class="form-group">
+          <!-- begin SEARCH INPUT -->
+
+  <div class="input-group header_search_box">
+
+    <label class="sr-only" for="search_box_id_711kddtm2utoonet25mb631cct">Enter search query</label>
+    
+    <span class="main_search_input_wrapper" data-js="main_search_input_wrapper">
+      <input aria-activedescendant="" aria-autocomplete="both" aria-expanded="false" aria-owns="header_auto_suggest_id_78qe94mlnfche1e195v1v6kavb" autocomplete="off" class="form-control main_search_input text" data-js="main_search_input" id="search_box_id_711kddtm2utoonet25mb631cct" maxlength="1000" name="q" testid="main_search_input" type="search">
+      <span class="header_search_filter_lock form-control-feedback" data-js="search_filter_locked" aria-hidden="true">
+        <svg aria-hidden="true" class="svg_icon " focusable="false" height="14" style="transform: rotate(-45deg);" viewBox="0 0 16 16" width="14" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8.5 0l-1.5 1.5 1.5 1.5-3.5 4h-3.5l2.75 2.75-4.25 5.635v0.615h0.615l5.635-4.25 2.75 2.75v-3.5l4-3.5 1.5 1.5 1.5-1.5-7.5-7.5zM7 8.5l-1-1 3.5-3.5 1 1-3.5 3.5z"></path>
+</svg>
+      </span>
+
+      <button class="btn btn-link header_search_clear_button" data-js="header_search_clear_button" type="button">
+        <div class="sr-only">
+          Clear Text
+        </div>
+        <svg aria-hidden="true" class="svg_icon svg_close_icon" focusable="false" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="rotate(45 7.964 7.964)"></rect>
+  <rect width="2" height="16" x="6.964" y="-.036" fill="currentColor" transform="scale(-1 1) rotate(45 0 -11.263)"></rect>
+</svg>
+</button>
+        <div data-js="header_auto_suggest" class="cp_header_auto_suggest hidden">
+  <div data-js="auto_suggest_aria_messages" class="sr-only" role="alert" aria-live="polite" aria-atomic="false"></div>
+  <ul id="header_auto_suggest_id_78qe94mlnfche1e195v1v6kavb" data-js="suggestion-menu" class="dropdown-menu" role="listbox"></ul>
+
+  <div class="hidden">
+    <svg aria-hidden="true" class="suggestion-skeleton-icon pulse" data-js="suggestion_skeleton_svg" focusable="false" height="14" preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 10" width="14" xmlns="http://www.w3.org/2000/svg">
+  <rect fill="currentColor" width="2000" height="10"></rect>
+</svg>
+  </div>
+</div>
+
+
+    </span>
+
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-primary btn-flat">
+        <i aria-hidden="true" class=" icon-search"></i>
+        <span class="sr-only">Search</span>
+      </button>
+    </span>
+  </div>
+
+<!-- end SEARCH INPUT -->
+
+        </div>
+</form>
+      <div class="form-group pull-right adv_search">
+        <a href="https://aurora.bibliocommons.com/user/saved_searches" class="hidden" data-ga-category="header_saved_searches" data-js="save_search_overlay" testid="link_savedsearches">Saved Searches</a>
+
+        <a href="https://aurora.bibliocommons.com/search" test_id="link_advancedsearch">Advanced Search</a>
+
+      </div>
+    </div>
+    <!-- /.cp_header_search -->
+  </div>
+</div>
+
+      <div class="navbar yamm navbar-default hidden-xs hidden-sm cp_header_nav" data-js="header-top-nav">
+  <div class="container">
+    <nav class="navbar-collapse collapse col-md-12">
+      <ul class="nav navbar-nav header_main_nav" id="header_main_nav" aria-haspopup="true" data-js="header-main-nav">
+
+        <li class="dropdown yamm-fw desktop mobile active" data-ga-category="header_top_level_nav" data-ga-label="Browse" data-ga-event="show"><a href="#browse_menu" class="dropdown-toggle hide_trigger_icon" data-toggle="dropdown"><span aria-hidden="true">Browse</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Browse, collapsed" data-text-expanded="Browse, expanded">Browse, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a><div class="dropdown-menu" data-js="header_nav_full_width_menu">    <div class="container yamm-content"><div class="menu-title"><h2>Browse</h2></div><div class="menu-column"><h3 class="desktop mobile">Audience</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/under-5/" data-ga-category="header_sub_level_nav" data-ga-label="Under 5 - Browse">Under 5</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/kids/" data-ga-category="header_sub_level_nav" data-ga-label="Kids - Browse">Kids</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/teens/" data-ga-category="header_sub_level_nav" data-ga-label="Teens - Browse">Teens</a></li><li class="desktop mobile active"><a href="https://aurorapl.ca/adults/" data-ga-category="header_sub_level_nav" data-ga-label="Adults - Browse">Adults</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/newcomers/" data-ga-category="header_sub_level_nav" data-ga-label="Newcomers - Browse">Newcomers</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Collections</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/books-ebooks" data-ga-category="header_sub_level_nav" data-ga-label="Books &amp; eBooks - Browse">Books &amp; eBooks</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/audiobooks-eaudiobooks/" data-ga-category="header_sub_level_nav" data-ga-label="Audiobooks &amp; eAudiobooks - Browse">Audiobooks &amp; eAudiobooks</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/watch-listen/" data-ga-category="header_sub_level_nav" data-ga-label="Movies &amp; TV - Browse">Movies &amp; TV</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/magazines-newspapers/" data-ga-category="header_sub_level_nav" data-ga-label="Magazines &amp; Newspapers - Browse">Magazines &amp; Newspapers</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/watch-listen/" data-ga-category="header_sub_level_nav" data-ga-label="Music &amp; Streaming - Browse">Music &amp; Streaming</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Interest</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/book-clubs/" data-ga-category="header_sub_level_nav" data-ga-label="Book Clubs - Browse">Book Clubs</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/reading-challenges" data-ga-category="header_sub_level_nav" data-ga-label="Reading Challenges - Browse">Reading Challenges</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/explore/?post-type=staff-list" data-ga-category="header_sub_level_nav" data-ga-label="Staff Picks - Browse">Staff Picks</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/explore/awards" data-ga-category="header_sub_level_nav" data-ga-label="Award Winners &amp; Nominees - Browse">Award Winners &amp; Nominees</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/explore/bestsellers" data-ga-category="header_sub_level_nav" data-ga-label="Bestsellers - Browse">Bestsellers</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/explore/recent_arrivals" data-ga-category="header_sub_level_nav" data-ga-label="New Titles - Browse">New Titles</a></li></ul></div>    </div></div></li><li class="dropdown yamm-fw desktop mobile" data-ga-category="header_top_level_nav" data-ga-label="Events" data-ga-event="show"><a href="#events_menu" class="dropdown-toggle hide_trigger_icon" data-toggle="dropdown"><span aria-hidden="true">Events</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Events, collapsed" data-text-expanded="Events, expanded">Events, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a><div class="dropdown-menu" data-js="header_nav_full_width_menu">    <div class="container yamm-content"><div class="menu-title"><h2>Events</h2></div><div class="menu-column"><ul class="list-unstyled"><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/index" data-ga-category="header_sub_level_nav" data-ga-label="All Events - Events">All Events</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Audience</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=audiences:(61af6d0eaa99c0300048b78e)" data-ga-category="header_sub_level_nav" data-ga-label="Under 5 - Events">Under 5</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=audiences:(61af6d15a0df514200752f7c)" data-ga-category="header_sub_level_nav" data-ga-label="Kids - Events">Kids</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=audiences:(61af6d1aa0df514200752f7d)" data-ga-category="header_sub_level_nav" data-ga-label="Teens - Events">Teens</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=audiences:(61aa615b951ec54100b33e0a)" data-ga-category="header_sub_level_nav" data-ga-label="Adults - Events">Adults</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=audiences:(622234f742683b29000905de)" data-ga-category="header_sub_level_nav" data-ga-label="Newcomers - Events">Newcomers</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=audiences:(61d871f11408782f0082f7f8)" data-ga-category="header_sub_level_nav" data-ga-label="All Ages - Events">All Ages</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Location</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=branch_location_id:(AURORA)" data-ga-category="header_sub_level_nav" data-ga-label="In the Library - Events">In the Library</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/events/search/fq=branch_location_id:(BC_VIRTUAL)" data-ga-category="header_sub_level_nav" data-ga-label="Virtual - Events">Virtual</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/v2/events?programs=62016a0ccf849841006ae86c" data-ga-category="header_sub_level_nav" data-ga-label="In the Community - Events">In the Community</a></li></ul></div>    </div></div></li><li class="dropdown yamm-fw desktop mobile" data-ga-category="header_top_level_nav" data-ga-label="Online Library" data-ga-event="show"><a href="#online_library_menu" class="dropdown-toggle hide_trigger_icon" data-toggle="dropdown"><span aria-hidden="true">Online Library</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Online Library, collapsed" data-text-expanded="Online Library, expanded">Online Library, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a><div class="dropdown-menu" data-js="header_nav_full_width_menu">    <div class="container yamm-content"><div class="menu-title"><h2>Online Library</h2></div><div class="menu-column"><ul class="list-unstyled"><li class="desktop mobile"><a href="https://aurorapl.ca/resource/" data-ga-category="header_sub_level_nav" data-ga-label="All Online Resources - Online Library">All Online Resources</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Interests</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/resources/books-literature/" data-ga-category="header_sub_level_nav" data-ga-label="Books &amp; Literature - Online Library">Books &amp; Literature</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/business-finance-law/" data-ga-category="header_sub_level_nav" data-ga-label="Business, Finance &amp; Law - Online Library">Business, Finance &amp; Law</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/canadian-content/" data-ga-category="header_sub_level_nav" data-ga-label="Canadian Content - Online Library">Canadian Content</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/do-it-yourself/" data-ga-category="header_sub_level_nav" data-ga-label="Do it Yourself - Online Library">Do it Yourself</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/health-wellness/" data-ga-category="header_sub_level_nav" data-ga-label="Health &amp; Wellness - Online Library">Health &amp; Wellness</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/history-genealogy/" data-ga-category="header_sub_level_nav" data-ga-label="History &amp; Genealogy - Online Library">History &amp; Genealogy</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/jobs-careers/" data-ga-category="header_sub_level_nav" data-ga-label="Jobs &amp; Careers - Online Library">Jobs &amp; Careers</a></li></ul></div><div class="menu-column"><ul class="list-unstyled"><li class="desktop mobile"><a href="https://aurorapl.ca/resources/kids/" data-ga-category="header_sub_level_nav" data-ga-label="Kids - Online Library">Kids</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/lifelong-learning/" data-ga-category="header_sub_level_nav" data-ga-label="Lifelong Learning - Online Library">Lifelong Learning</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/magazines-newspapers/" data-ga-category="header_sub_level_nav" data-ga-label="Magazines &amp; Newspapers - Online Library">Magazines &amp; Newspapers</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/music-movies-tv/" data-ga-category="header_sub_level_nav" data-ga-label="Music, Movies &amp; TV - Online Library">Music, Movies &amp; TV</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/readers-advisory/" data-ga-category="header_sub_level_nav" data-ga-label="Readers' Advisory - Online Library">Readers' Advisory</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/research-reference/" data-ga-category="header_sub_level_nav" data-ga-label="Research &amp; Reference - Online Library">Research &amp; Reference</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/resources/research-reference/" data-ga-category="header_sub_level_nav" data-ga-label="Science &amp; Technology - Online Library">Science &amp; Technology</a></li></ul></div>    </div></div></li><li class="dropdown yamm-fw desktop mobile" data-ga-category="header_top_level_nav" data-ga-label="Using The Library" data-ga-event="show"><a href="#using_the_library_menu" class="dropdown-toggle hide_trigger_icon" data-toggle="dropdown"><span aria-hidden="true">Using The Library</span><span class="sr-only" data-js="sr-only-dropdown-toggle" data-text-collapsed="Using The Library, collapsed" data-text-expanded="Using The Library, expanded">Using The Library, collapsed</span><span aria-hidden="true" class="icon-arrow"></span></a><div class="dropdown-menu" data-js="header_nav_full_width_menu">    <div class="container yamm-content"><div class="menu-title"><h2>Using The Library</h2></div><div class="menu-column"><h3 class="desktop mobile">Membership</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/get-or-renew-a-library-card/" data-ga-category="header_sub_level_nav" data-ga-label="Get  a Library Card - Using The Library">Get  a Library Card</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/borrowing-101/" data-ga-category="header_sub_level_nav" data-ga-label="Borrowing 101 - Using The Library">Borrowing 101</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/loan-periods-fees/" data-ga-category="header_sub_level_nav" data-ga-label="Loan Periods &amp; Fees - Using The Library">Loan Periods &amp; Fees</a></li><li class="desktop mobile"><a href="https://aurora.bibliocommons.com/user_dashboard" data-ga-category="header_sub_level_nav" data-ga-label="My Library Dashboard - Using The Library">My Library Dashboard</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Services</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/accessibility/" data-ga-category="header_sub_level_nav" data-ga-label="Accessibility - Using The Library">Accessibility</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/art-gallery/" data-ga-category="header_sub_level_nav" data-ga-label="Art Gallery - Using The Library">Art Gallery</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/form-interlibrary-loan/" data-ga-category="header_sub_level_nav" data-ga-label="Interlibrary Loans - Using The Library">Interlibrary Loans</a></li><li class="hidden"><a href="#" data-ga-category="header_sub_level_nav" data-ga-label="Study Rooms - Using The Library">Study Rooms</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/form-readers-advisory/" data-ga-category="header_sub_level_nav" data-ga-label="Readers Advisory - Using The Library">Readers Advisory</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/form-interlibrary-loan/" data-ga-category="header_sub_level_nav" data-ga-label="Suggest a Purchase - Using The Library">Suggest a Purchase</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/volunteers" data-ga-category="header_sub_level_nav" data-ga-label="Volunteers - Using The Library">Volunteers</a></li></ul></div><div class="menu-column"><h3 class="desktop mobile">Technology</h3><ul class="list-unstyled desktop mobile"><li class="desktop mobile"><a href="https://aurorapl.ca/computers-wifi-and-printing/" data-ga-category="header_sub_level_nav" data-ga-label="Computers, WIFI &amp; Printing - Using The Library">Computers, WIFI &amp; Printing</a></li><li class="desktop mobile"><a href="https://aurorapl.ca/creative-studio/" data-ga-category="header_sub_level_nav" data-ga-label="Creative Studio - Using The Library">Creative Studio</a></li></ul></div>    </div></div></li>
+
+      </ul>
+
+    </nav>
+
+  </div>
+</div>
+<!-- /.cp_header_nav -->
+
+<script id="t_biblionav_header_nav_xs" type="x-handlebars-template">
+  <div class="navbar yamm navbar-default cp_header_nav">
+    <nav class="col-xs-12">
+
+      {{{nav_html}}}
+
+    </nav>
+  </div>
+</script>
+
+    </div>
 <div align="center">
 
 <form action=" " method="post" name="calculatorform" id="calculatorform">
