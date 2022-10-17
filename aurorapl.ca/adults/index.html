@@ -801,6 +801,168 @@ var cardsL10n = {"openImgAttrTitle":"Open Image Attribution for %s","closeImgAtt
                 <div class="fl-builder-content fl-builder-content-1376 fl-builder-content-primary fl-builder-global-templates-locked" data-post-id="1376"><div class="fl-row fl-row-full-width fl-row-bg-photo fl-node-61d868104f8c3 fl-row-custom-height fl-row-align-center fl-row-bg-overlay" data-node="61d868104f8c3">
 	<div class="fl-row-content-wrap">
 						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+						<script type="text/javascript">
+onload = function() {
+	document.calculatorform.reset();
+}
+</script>
+
+<div align="center">
+
+<form action=" " method="post" name="calculatorform" id="calculatorform">
+<table border="0" cellpadding="0" cellspacing="0" width="450" summary="A javascript driven calculator to determine estimated retail value for a variety of library services">
+	<caption>Value of Your Library Use</caption>
+	<tbody>
+	<tr>
+		<th>Input Your<br />Monthly Use</th>
+		<th>Library Materials &amp; Services</th>
+		
+	</tr>
+	<tr>
+		<td colspan="3"><hr /></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="books" id="books" size="5" onchange="doCalculator()" tabindex="1" /></td>
+		<td><label for="books">Books</label></td>
+		<td><label for="booksResult">$<input type="text" id="booksResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="yabooks" id="yabooks" size="5" onchange="doCalculator()" tabindex="2" /></td>
+		<td><label for="yabooks">Audio (Talking Books)</label></td>
+		<td><label for="yabooksResult">$<input type="text" id="yabooksResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="childrensbooks" id="childrensbooks" size="5" onchange="doCalculator()" tabindex="3" /></td>
+		<td><label for="childrensbooks">Video Games</label></td>
+		<td><label for="childrensbooksResult">$<input type="text" id="childrensbooksResult" size="5" value="0.00" /></label></td>
+	</tr>
+		<td><input type="text" name="audiobooks" id="audiobooks" size="5" onchange="doCalculator()" tabindex="4" /></td>
+		<td><label for="audiobooks">DVD's</label></td>
+		<td><label for="audiobooksResult">$<input type="text" id="audiobooksResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="ill" id="ill" size="5" onchange="doCalculator()" tabindex="5" /></td>
+		<td><label for="ill">Music</label></td>
+		<td><label for="illResult">$<input type="text" id="illResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="ebooks" id="ebooks" size="5" onchange="doCalculator()" tabindex="6" /></td>
+		<td><label for="ebooks">Interlibrary Loans</label></td>
+		<td><label for="ebooksResult">$<input type="text" id="ebooksResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="magazines" id="magazines" size="5" onchange="doCalculator()" tabindex="7" /></td>
+		<td><label for="magazines">Magazines</label></td>
+		<td><label for="magazinesResult">$<input type="text" id="magazinesResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="newspapers" id="newspapers" size="5" onchange="doCalculator()" tabindex="8" /></td>
+		<td><label for="newspapers">Newspapers</label></td>
+		<td><label for="newspapersResult">$<input type="text" id="newspapersResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="movies" id="movies" size="5" onchange="doCalculator()" tabindex="9" /></td>
+		<td><label for="movies">Program Attendance</label></td>
+		<td><label for="moviesResult">$<input type="text" id="moviesResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+	<tr>
+		<td><input type="text" name="cds" id="cds" size="5" onchange="doCalculator()" tabindex="10" /></td>
+		<td><label for="cds">eLearning Courses Taken</label></td>
+		<td><label for="cds">$<input type="text" id="cdsResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="musicdownloads" id="musicdownloads" size="5" onchange="doCalculator()" tabindex="11" /></td>
+		<td><label for="musicdownloads">Enter Hours of Computer Use</label></td>
+		<td><label for="musicdownloads">$<input type="text" id="musicdownloadsResult" size="5" value="0.00" /></label></td>
+	</tr>
+	
+	<tr>
+		<td><input type="text" name="meetingroom" id="meetingroom" size="5" onchange="doCalculator()" tabindex="12" /></td>
+		<td><label for="meetingroom">Enter Hours of Wi-Fi Use</label></td>
+		<td><label for="meetingroom">$<input type="text" id="meetingroomResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="adultprogram" id="adultprogram" size="5" onchange="doCalculator()" tabindex="13" /></td>
+		<td><label for="adultprogram">Database Searches</label></td>
+		<td><label for="adultprogramResult">$<input type="text" id="adultprogramResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="yasprogram" id="yaprogram" size="5" onchange="doCalculator()" tabindex="14" /></td>
+		<td><label for="yaprogram">Enter Hours of Study Room Use</label></td>
+		<td><label for="yaprogramResult">$<input type="text" id="yaprogramResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="childrensprogram" id="childrensprogram" size="5" onchange="doCalculator()" tabindex="15" /></td>
+		<td><label for="childrensprogram">Information Questions</label></td>
+		<td><label for="childrensprogramResult">$<input type="text" id="childrensprogramResult" size="5" value="0.00" /></label></td>
+	</tr>
+	<tr>
+		<td colspan="3"><hr /></td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><input type="button" value="Calculate The Value of Your Library Use" onclick="doCalculator()" tabindex="20"> <input type="reset" value="Clear Form" tabindex="21"></td>
+		<td>$<input type="text" name="totalResult" id="totalResult" size="5" value="0.00"></td>
+	</tr>
+	
+	<tr>
+		<td colspan="3"><hr /></td>
+	</tr>
+</table>
+</form>
+</div>
+
+<script>
+// calculates the value for each table row - each library material 
+// has two lines of code below
+function doCalculator(){
+	var booksValue = document.calculatorform.books.value * 26.91;
+	document.getElementById("booksResult").value = booksValue.toFixed(2);
+	var yabooksValue = document.calculatorform.yabooks.value * 47.72;
+	document.getElementById("yabooksResult").value = yabooksValue.toFixed(2);
+	var childrensbooksValue = document.calculatorform.childrensbooks.value * 56.62;
+	document.getElementById("childrensbooksResult").value = childrensbooksValue.toFixed(2);
+	var audiobooksValue = document.calculatorform.audiobooks.value * 32.55;
+	document.getElementById("audiobooksResult").value = audiobooksValue.toFixed(2);
+	var illValue = document.calculatorform.ill.value * 18.30;
+	document.getElementById("illResult").value = illValue.toFixed(2);
+	var ebooksValue = document.calculatorform.ebooks.value * 25.00;
+	document.getElementById("ebooksResult").value = ebooksValue.toFixed(2);
+	var magazinesValue = document.calculatorform.magazines.value * 5.00;
+	document.getElementById("magazinesResult").value = magazinesValue.toFixed(2);
+	var newspapersValue = document.calculatorform.newspapers.value * 1.50;
+	document.getElementById("newspapersResult").value = newspapersValue.toFixed(2);
+	var moviesValue = document.calculatorform.movies.value * 15.00;
+	document.getElementById("moviesResult").value = moviesValue.toFixed(2);
+	var cdsValue = document.calculatorform.cds.value * 75.00;
+	document.getElementById("cdsResult").value = cdsValue.toFixed(2);
+	var musicdownloadsValue = document.calculatorform.musicdownloads.value * 3.00;
+	document.getElementById("musicdownloadsResult").value = musicdownloadsValue.toFixed(2);
+	var meetingroomValue = document.calculatorform.meetingroom.value * 2.50;
+	document.getElementById("meetingroomResult").value = meetingroomValue.toFixed(2);
+	var adultprogramValue = document.calculatorform.adultprogram.value * 20.00;
+	document.getElementById("adultprogramResult").value = adultprogramValue.toFixed(2);
+	var yaprogramValue = document.calculatorform.yaprogram.value * 25.00;
+	document.getElementById("yaprogramResult").value = yaprogramValue.toFixed(2);
+	var childrensprogramValue = document.calculatorform.childrensprogram.value * 10.00;
+	document.getElementById("childrensprogramResult").value = childrensprogramValue.toFixed(2);
+	//var museumpassesValue = document.calculatorform.museumpasses.value * 20.00;
+	//document.getElementById("museumpassesResult").value = museumpassesValue.toFixed(2);
+	//var computerhoursValue = document.calculatorform.computerhours.value * 12.00;
+	//document.getElementById("computerhoursResult").value = computerhoursValue.toFixed(2);
+	//var databasesValue = document.calculatorform.databases.value * 19.95;
+	//document.getElementById("databasesResult").value = databasesValue.toFixed(2);
+	//var referenceValue = document.calculatorform.reference.value * 7.00;
+	//document.getElementById("referenceResult").value = referenceValue.toFixed(2);
+// these last two lines adds up all the values for the total value
+	var totalValue = (document.calculatorform.booksResult.value*1)+(document.calculatorform.yabooksResult.value*1)+(document.calculatorform.childrensbooksResult.value*1)+(document.calculatorform.audiobooksResult.value*1)+(document.calculatorform.illResult.value*1)+(document.calculatorform.ebooksResult.value*1)+(document.calculatorform.magazinesResult.value*1)+(document.calculatorform.newspapersResult.value*1)+(document.calculatorform.moviesResult.value*1)+(document.calculatorform.cdsResult.value*1)+(document.calculatorform.musicdownloadsResult.value*1)+(document.calculatorform.meetingroomResult.value*1)+(document.calculatorform.adultprogramResult.value*1)+(document.calculatorform.yaprogramResult.value*1)+(document.calculatorform.childrensprogramResult.value*1);
+	document.getElementById("totalResult").value = totalValue.toFixed(2);
+}
+// launches popup window for value explaination
+function popUp(url, name, w, h){
+	popupWin = window.open(url, name, 'resizable,scrollbars,menubar=0,WIDTH=' + w + ',HEIGHT=' + h);
+}
+</script>
 		
 <div class="fl-col-group fl-node-61d868104f8c6" data-node="61d868104f8c6">
 			<div class="fl-col fl-node-61d868104f8c9" data-node="61d868104f8c9">
@@ -846,6 +1008,7 @@ var cardsL10n = {"openImgAttrTitle":"Open Image Attribution for %s","closeImgAtt
 <div class="fl-row fl-row-full-width fl-row-bg-none fl-node-61d868104f925" data-node="61d868104f925">
 	<div class="fl-row-content-wrap">
 						<div class="fl-row-content fl-row-fixed-width fl-node-content">
+						
 		
 <div class="fl-col-group fl-node-61d868104f927" data-node="61d868104f927">
 			<div class="fl-col fl-node-61d868104f92a" data-node="61d868104f92a">
