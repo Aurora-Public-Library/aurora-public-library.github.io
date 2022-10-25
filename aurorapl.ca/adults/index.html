@@ -954,6 +954,12 @@ onload = function() {
 		<td>$<input type="text" name="totalResult" id="totalResult" size="5" value="0.00"></td>
 		
 	</tr>
+	<tr>
+		<td></td>
+		<td><strong>Annual Savings</strong></td>
+		<td>$<input type="text" name="AnnualtotalResult" id="AnnualtotalResult" size="5" value="0.00"></td>
+		
+	</tr>
 	
 	
 </table>
@@ -1005,6 +1011,8 @@ function doCalculator(){
 // these last two lines adds up all the values for the total value
 	var totalValue = (document.calculatorform.booksResult.value*1)+(document.calculatorform.yabooksResult.value*1)+(document.calculatorform.childrensbooksResult.value*1)+(document.calculatorform.audiobooksResult.value*1)+(document.calculatorform.illResult.value*1)+(document.calculatorform.ebooksResult.value*1)+(document.calculatorform.magazinesResult.value*1)+(document.calculatorform.newspapersResult.value*1)+(document.calculatorform.moviesResult.value*1)+(document.calculatorform.cdsResult.value*1)+(document.calculatorform.musicdownloadsResult.value*1)+(document.calculatorform.meetingroomResult.value*1)+(document.calculatorform.adultprogramResult.value*1)+(document.calculatorform.yaprogramResult.value*1)+(document.calculatorform.childrensprogramResult.value*1);
 	document.getElementById("totalResult").value = totalValue.toFixed(2);
+	var total1Value = (document.calculatorform.booksResult.value*12)+(document.calculatorform.yabooksResult.value*12)+(document.calculatorform.childrensbooksResult.value*12)+(document.calculatorform.audiobooksResult.value*12)+(document.calculatorform.illResult.value*12)+(document.calculatorform.ebooksResult.value*12)+(document.calculatorform.magazinesResult.value*12)+(document.calculatorform.newspapersResult.value*12)+(document.calculatorform.moviesResult.value*12)+(document.calculatorform.cdsResult.value*12)+(document.calculatorform.musicdownloadsResult.value*12)+(document.calculatorform.meetingroomResult.value*12)+(document.calculatorform.adultprogramResult.value*12)+(document.calculatorform.yaprogramResult.value*12)+(document.calculatorform.childrensprogramResult.value*12);
+	document.getElementById("AnnualtotalResult").value = total1Value.toFixed(2);
 }
 // launches popup window for value explaination
 function popUp(url, name, w, h){
